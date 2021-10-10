@@ -1,9 +1,20 @@
-.site__intro {
+body {
+  font-size: var(--font-size);
+}
+header {
   font-family: 'Faune';
   font-size: calc(2.5em + 2vw);
   font-weight: bold;
   letter-spacing: -0.05em;
   line-height: 1.1;
-  margin: 0;
-  padding: 0;
+}
+
+.nav__item {
+  color: var(--color__link);
+  font-size: 1.5em;
+  font-family: 'Faune';
+  font-weight: 900;
+  line-height: 1;
+  text-transform: lowercase;
+  margin-left: var(--baseline-s);
 }
