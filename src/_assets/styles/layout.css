@@ -1,0 +1,7 @@
+.site__intro {
+  display: flex;
+  flex: column wrap;
+  column-gap: 0.2em;
+  align-items: baseline;
+  justify-content: flex-start;
+}
