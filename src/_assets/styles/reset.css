@@ -3,6 +3,7 @@ li, dt, dd,
 h1, h2, h3, h4,
 body, main, header, footer, section, article,
 p {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
