@@ -1,7 +1,7 @@
 {% extends "_base.njk" %}
 {% block article %}
-<article class="main">
-  <h1>{{ article__title }}</h1>
+<article class="site__intro">
+  <h2 class="site__intro_headline">{{ headline }}</h2>
   {{ content | safe }}
 </article>
 {% endblock %}
