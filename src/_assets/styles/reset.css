@@ -1,0 +1,100 @@
+dl, ul, ol,
+li, dt, dd,
+h1, h2, h3, h4,
+body, main, header, footer, section, article,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  background: var(--color__text-secondary);
+  border: 0;
+  height: 1px;
+  margin: var(--baseline-l) auto;
+  width: 33%;
+}
+
+pre {
+  background: var(--color__fg);
+  border-radius: 97% 3% 97% 3% / 3% 97% 3% 97%;
+  overflow-x: auto;
+  padding: var(--baseline);
+  white-space: pre-wrap;
+}
+/* ------------------------------------------------------ Images ------------------------------------------------- */
+.img {
+  height: 100%;
+  fill: currentColor;
+  object-fit: contain;
+  width: 100%;
+}
+/* ------------------------------------------------------ Links ------------------------------------------------- */
+a {
+  box-sizing: border-box;
+  color: var(--color__link);
+  fill: var(--color__link);
+  margin: 0;
+  text-decoration: solid underline var(--color) 0.1em;
+}
+a:active {
+  color: var(--color__cta);
+  fill: var(--color__cta);
+}
+a:focus {
+  outline: 0.2em dashed var(--color__cta);
+  outline-offset: 0.1em;
+}
+a:hover {
+  color: var(--color__cta);
+  fill:var(--color__cta);
+  text-decoration-color: inherit;
+}
+/* ------------------------------------------------------ Lists ------------------------------------------------- */
+ul {
+  list-style: outside circle;
+}
+ul ul {
+  margin-left: var(--baseline);
+}
+
+/* ------------------------------------------------------ Text -------------------------------------------------- */
+abbr {
+  font-variant: small-caps;
+  font-size: 0.7em;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+code {
+  background: var(--color__fg);
+  padding: 0.1em;
+  font-family: var(--font__custom-mono), var(--font-mono);
+}
+cite,
+q {
+  font-style: italic;
+}
+ins {
+  text-decoration: none;
+}
+mark {
+  background-color: var(--color__bg);
+  box-sizing: border-box;
+  box-shadow: inset 0 0 -2em currentColor;
+  color: var(--color__border);
+  font-family: 'Crimson', var(--font-serif);
+  font-size: 1 em;
+  font-variant: small-caps;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin: 0;
+  padding: 0;
+}
+sup {
+  font-family: var(--font__custom-mono), var(--font-mono);
+  font-weight: bold;
+  margin-left: -0.33em;
+}
+time {
+  font-family: var(--font__custom-mono), var(--font-mono);
+}
