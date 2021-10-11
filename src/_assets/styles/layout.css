@@ -1,8 +1,9 @@
 body {
   display: grid;
   grid-template-columns: 1fr minmax(10em,40em) 1fr;
-  grid-template-rows: min-content auto 1fr min-content;
+  grid-template-rows: 0.2fr min-content auto 1fr min-content;
   grid-template-areas:
+    ". . ."  
     ". header ."
     ". main ."
     ". . ."
@@ -34,10 +35,6 @@ footer {
   justify-content: flex-end;
   padding: 0.2em;
 }
-
-
-
-
 .article__headline {
   align-self: flex-end;
 }
