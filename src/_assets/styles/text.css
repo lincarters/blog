@@ -9,13 +9,3 @@ header {
   line-height: 1.1;
   padding: 0 .5em;
 }
-
-.nav__item {
-  color: var(--color__link);
-  font-size: 1.5em;
-  font-family: 'Faune';
-  font-weight: 900;
-  line-height: 1;
-  text-transform: lowercase;
-  margin-left: var(--baseline-s);
-}
