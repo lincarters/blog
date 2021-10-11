@@ -7,6 +7,7 @@ header {
   font-weight: bold;
   letter-spacing: -0.05em;
   line-height: 1.1;
+  padding: 0 .5em;
 }
 
 .nav__item {
