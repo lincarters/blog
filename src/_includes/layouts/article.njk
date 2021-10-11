@@ -5,6 +5,8 @@
   <section class="article__body">
     {{ content | safe }}
   </section>
-  {% include "_article__footer.njk" %}
+  <footer class="article__footer">
+    {{ article__footer }}
+  </footer>
 </article>
 {% endblock %}
