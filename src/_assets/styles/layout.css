@@ -19,22 +19,17 @@ header {
   column-gap: 0.2em;
   align-items: baseline;
   justify-content: flex-end;
-  padding: 0.2em;
 }
-main {
+.page {
   grid-area: main;
 }
 footer {
   grid-area: footer;
 }
-.article__header {
+.page {
   display: flex;
   flex-flow: column nowrap;
-  column-gap: 0.2em;
+  row-gap: 1em;
   align-items: baseline;
   justify-content: flex-end;
-  padding: 0.2em;
-}
-.article__headline {
-  align-self: flex-end;
 }

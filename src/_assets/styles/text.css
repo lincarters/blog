@@ -1,7 +1,13 @@
 body {
   font-size: var(--font-size);
 }
-header {
+.page {
+  font-size: calc(2.5em + 2vw);
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+
+.page__title {
   font-family: 'Faune';
   font-size: calc(2.5em + 2vw);
   font-weight: bold;
@@ -9,6 +15,9 @@ header {
   line-height: 1.1;
 }
 
-.article {
-  font-size: 2.5em;
+.page__headline {
+  font-family: 'Faune Display';
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  margin-left: 0.1em;
 }
