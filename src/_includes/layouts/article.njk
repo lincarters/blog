@@ -2,7 +2,9 @@
 {% block article %}
 <article class="article">
   {% include "_article__header.njk" %}
-  {% include "_article__body.njk" %}
+  <section class="article__body">
+    {{ content | safe }}
+  </section>
   {% include "_article__footer.njk" %}
 </article>
 {% endblock %}
