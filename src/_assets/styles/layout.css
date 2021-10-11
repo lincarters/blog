@@ -20,18 +20,6 @@ header {
   justify-content: flex-end;
   padding: 0.2em;
 }
-
-.nav {
-  align-self: flex-end;
-}
-.nav__list {
-  display: flex;
-      flex-flow: row wrap;
-      align-items: flex-end;
-      column-gap: 0.2em;
-    list-style: none;
-}
-
 main {
   grid-area: main;
 }
