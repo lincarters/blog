@@ -1,18 +1,18 @@
 body {
   display: grid;
-  grid-template-columns: 1fr minmax(10em,40em) 1fr;
+  grid-template-columns: 1fr minmax(10em,40em) 1fr 1fr;
   grid-template-rows: 0.2fr min-content auto 1fr min-content;
   grid-template-areas:
-    ". . ."  
-    ". header ."
-    ". main ."
-    ". . ."
-    ". footer ."
+    ". . . ."  
+    ". header . ."
+    ". page page ."
+    ". . . ."
+    ". footer . ."
   ;
   align-content: center;
   min-height: 100vh;
 }
-header {
+.header {
   grid-area: header;
   display: flex;
   flex-flow: column nowrap;
@@ -21,7 +21,7 @@ header {
   justify-content: flex-end;
 }
 .page {
-  grid-area: main;
+  grid-area: page;
 }
 footer {
   grid-area: footer;
