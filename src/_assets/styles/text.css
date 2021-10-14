@@ -1,24 +1,21 @@
 @import url("_base.css");
 
-body {
-  font-size: var(--font-size);
-}
 .page {
-  font-size: calc(2.5em + 2vw);
+  font-size: calc(2.5em*var(--font-size));
   letter-spacing: -0.05em;
   line-height: 1.1;
 }
 .page__title {
-  font-family: 'Faune';
-  font-size: calc(2.5em + 2vw);
+  font-family: var(--font__custom-heading);
+  font-size: calc(10em + 2vw);
   font-weight: bold;
   letter-spacing: -0.05em;
   line-height: 1.1;
 }
 
 .page__headline {
-  font-family: 'Faune Display';
-  letter-spacing: -0.05em;
+  font-family: var(--font__custom-body);
+  font-size: calc(2.5em + 2vw);
   line-height: 1.1;
   margin-left: 0.1em;
 }
@@ -27,4 +24,9 @@ body {
   font-family: var(--font__custom-copy);
   font-size: 1.1em;
   margin: 0.5em 0;
+}
+
+.nav__menu {
+  font-family: var(--font__custom-copy);
+  font-size: 1.5em;
 }

@@ -1,4 +1,8 @@
 <footer class="footer">
-  {{ site.title }}
-  {{ site.tagline }}
-</footer>
+  {{ site.desc }}
+  <ul class="nav__menu">
+    {%- for page in collections.page -%}
+      <li><a class="link" href="{{ page.url | url }}">{{ page.data.title }}</a></li>
+    {% endfor %}
+  </ul>
+  </footer>

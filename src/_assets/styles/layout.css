@@ -9,7 +9,7 @@ body {
     ". header . ."
     ". page page ."
     ". . . ."
-    ". . . footer"
+    ". footer footer ."
   ;
   align-content: center;
   min-height: 100vh;
@@ -36,4 +36,9 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
+}
+
+.nav__menu {
+  display: flex;
+  list-style: none;
 }
