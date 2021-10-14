@@ -1,3 +1,5 @@
+@import url("_base.css");
+
 body {
   font-size: var(--font-size);
 }
@@ -6,7 +8,6 @@ body {
   letter-spacing: -0.05em;
   line-height: 1.1;
 }
-
 .page__title {
   font-family: 'Faune';
   font-size: calc(2.5em + 2vw);
@@ -20,4 +21,10 @@ body {
   letter-spacing: -0.05em;
   line-height: 1.1;
   margin-left: 0.1em;
+}
+
+.footer {
+  font-family: var(--font__custom-copy);
+  font-size: 1.1em;
+  margin: 0.5em 0;
 }
