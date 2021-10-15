@@ -16,19 +16,22 @@
 }
 
 .nav__menu {
-  font-family: var(--font__custom-copy);
-  font-size: 1.5em;
+  font-family: var(--font__custom__mono), var(--font__mono);
+  font-weight: bold;
+  font-size: 2em;
 }
 
 
 
 .page__title {
+  border-bottom: 1px solid var(--color__fg);
   font-family: var(--font__custom__heading);
   font-size: calc(10em + 2vw);
   font-weight: bold;
   letter-spacing: -0.066em;
   line-height: 1.1;
   margin-left: -0.05em;
+  margin-bottom: 0.1em;
 }
 .page__headline {
   font-family: var(--font__custom__headline), var(--font__serif);

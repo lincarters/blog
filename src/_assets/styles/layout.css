@@ -14,6 +14,9 @@ body {
   margin: 0 1rem;
 }
   .header {
+    display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
     grid-area: header;
     margin: 1rem;
   }
@@ -24,22 +27,21 @@ body {
     row-gap: 6rem;
     margin: 0 1rem;
   }
-    .page__title {
-      border-bottom: 1px solid var(--color__fg);
-      margin-bottom: 2rem;
-      padding-bottom: 1rem;
+    .page__header {
+      display: flex;
+      flex-flow: row wrap;
     }
+
+.nav__menu {
+  list-style: none;
+  text-align: right;
+}
+  .nav__menu__item::after {
+    content: '';
+  }
   .footer {
     grid-area: footer;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-items: center;
   }
-
-
-
-
-.nav__menu {
-  display: flex;
-  list-style: none;
-}
