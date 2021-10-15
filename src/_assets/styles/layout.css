@@ -2,7 +2,7 @@
 body {
   display: grid;
   grid-template-columns: 1fr minmax(10em,40em) 1fr 1fr;
-  grid-template-rows: 6rem auto 1fr min-content;
+  grid-template-rows: min-content auto 1fr min-content;
   grid-template-areas:
     "header header header header" 
     ". page page ."
@@ -20,6 +20,13 @@ body {
     grid-area: header;
     margin: 1rem;
   }
+    .header__title {
+      display: flex;
+        flex-flow: row wrap;
+    }
+      .header__title::before {
+        content: '/\00a0';
+      }
   .page {
     grid-area: page;
     display: flex;
@@ -37,7 +44,9 @@ body {
         margin-bottom: 0.55em;
         padding: 0;
       }
-
+        .page__title::after {
+          content: '.';
+         }
 .nav__menu {
   list-style: none;
   text-align: right;
@@ -45,6 +54,14 @@ body {
   .nav__menu__item::after {
     content: '';
   }
+
+.nav__breadcrumb {
+  display: flex;
+  list-style: none;
+}
+.nav__breadcrumb span::before {
+  content: '\00a0>\00a0';
+}
   .footer {
     grid-area: footer;
     display: flex;

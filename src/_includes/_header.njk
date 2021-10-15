@@ -1,5 +1,17 @@
 <header class="header">
-  <h3 class="header__title"><a href="/">{{ site.title }}</a></h1>
+  <h3 class="header__title">
+    <a href="/">{{ site.title }}</a>
+{% set navPages = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key,{ includeSelf: false }) %}
+
+
+<nav class="nav__breadcrumb">
+<ul>
+{%- for item in navPages %}
+  <li>{% if item.url == page.url %}{{ item.title }}{% else %}<a href="{{ item.url | url }}">{{ item.title }}</a>{% endif %}</li>
+{%- endfor %}
+</ul>
+</nav>
+  </h3>
   <!--ul class="nav__menu">
     {%- for page in collections.page -%}
       <li class="nav__menu__item"><a href="{{ page.url | url }}">{{ page.data.title }}</a></li>
