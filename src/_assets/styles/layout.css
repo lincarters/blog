@@ -24,9 +24,6 @@ body {
       display: flex;
         flex-flow: row wrap;
     }
-      .header__title::before {
-        content: '/\00a0';
-      }
   .page {
     grid-area: page;
     display: flex;
@@ -59,7 +56,7 @@ body {
   display: flex;
   list-style: none;
 }
-.nav__breadcrumb span::before {
+.nav__breadcrumb li::before {
   content: '\00a0>\00a0';
 }
   .footer {

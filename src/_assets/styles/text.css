@@ -3,6 +3,7 @@
   font-family: var(--font__custom__mono), var(--font__mono);
   font-size: 1em;
   text-transform: capitalize;
+  font-weight: bold;
 }
 
 

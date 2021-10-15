@@ -16,11 +16,18 @@ hr {
   width: 33%;
 }
 
+
+blockquote {
+  border: 0.1em dashed var(--color__link);
+  background: var(--color__border);
+  margin: 1em 0;
+  padding: 1em 1em 1em 2em;
+}
 pre {
-  background: var(--color__fg);
-  border-radius: 97% 3% 97% 3% / 3% 97% 3% 97%;
+  background: var(--color__bg);
+  border-radius: 10% 0;
   overflow-x: auto;
-  padding: var(--baseline);
+  padding: 1rem;
   white-space: pre-wrap;
 }
 /* ------------------------------------------------------ Images ------------------------------------------------- */
@@ -56,7 +63,7 @@ ul {
   list-style: outside circle;
 }
 ul ul {
-  margin-left: var(--baseline);
+  margin-left: 1rem;
 }
 
 /* ------------------------------------------------------ Text -------------------------------------------------- */

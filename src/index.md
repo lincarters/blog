@@ -1,5 +1,6 @@
 ---
 layout: layouts/page
+key: Hello
 title: Hello
 headline: This is Linda's personal website.
 ---
