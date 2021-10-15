@@ -1,12 +1,13 @@
 :root {
   --color__bg: whitesmoke;
-  --color__fg: #fdd;
-  --color: #fab;
+  --color__border: #fdd;
   --color__brand: #938;
-  --color__border: #c382ae;
   --color__link: #c6a;
-  --color__heading: #938;
-  --color__text: #607;
-  --color__text-secondary: #c382ae;
   --color__cta: #8a3;
+
+
+
+    --color__1: #c382ae;
+    --color__2: #fab;
+
 }
