@@ -24,15 +24,11 @@
 
 
 .page__title {
-  border-bottom: 0.1em solid var(--color__border);
   font-family: var(--font__custom__heading);
   font-size: calc(10em + 2vw);
   font-weight: bold;
   letter-spacing: -0.066em;
   line-height: 1.1;
-  margin-left: -0.05em;
-  margin-bottom: 0.1em;
-  padding: 0;
 }
   .page__title::after {
     content: '.';

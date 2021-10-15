@@ -31,6 +31,12 @@ body {
       display: flex;
       flex-flow: row wrap;
     }
+      .page__title {
+        text-decoration: underline var(--color__border);
+        margin-left: -0.05em;
+        margin-bottom: 0.55em;
+        padding: 0;
+      }
 
 .nav__menu {
   list-style: none;
