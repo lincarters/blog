@@ -1,13 +1,13 @@
 @import url("_base.css");
 body {
   display: grid;
-  grid-template-columns: 1fr minmax(10em,40em) 2fr;
+  grid-template-columns: 1fr minmax(10em,40em) 1fr 1fr;
   grid-template-rows: 6rem auto 1fr min-content;
   grid-template-areas:
-    "header header header" 
-    ". page ."
-    ". . ."
-    "footer footer footer"
+    "header header header header" 
+    ". page page ."
+    ". . . ."
+    "footer footer footer footer"
   ;
   align-content: center;
   min-height: 100vh;
