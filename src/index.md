@@ -1,6 +1,7 @@
 ---
 layout: layouts/page
-key: Hello
+eleventyNavigation:
+  key: Hello
 title: Hello
 headline: This is Linda's personal website.
 ---

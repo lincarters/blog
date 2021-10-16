@@ -1,4 +1,7 @@
 {
   "layout": "layouts/page",
+  "eleventyNavigation": {
+    "parent": "About"
+  },
   "tags": "page"
 }

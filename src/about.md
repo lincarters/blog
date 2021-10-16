@@ -1,4 +1,5 @@
 ---
+layout: layouts/page
 eleventyNavigation:
   key: About
 title: About
