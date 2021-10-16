@@ -1,0 +1,12 @@
+{% extends "_base.njk" %}
+{% block page %}
+<article>
+  <dl class="page__header">
+    <dt class="hidden">Published on:</dt>
+   <dd class="article__date_value"><time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time></dd>
+  </dl>
+  <section class="page__body">
+    {{ content | safe }}
+  </section>
+</article>
+{% endblock %}
