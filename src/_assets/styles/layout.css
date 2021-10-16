@@ -26,9 +26,6 @@ body {
     }
   .page {
     grid-area: page;
-    display: flex;
-    flex-flow: row wrap;
-    row-gap: 6rem;
     margin: 0 1rem;
   }
     .page__header {
@@ -36,14 +33,20 @@ body {
       flex-flow: row wrap;
     }
       .page__title {
-        text-decoration: underline var(--color__border);
         margin-left: -0.05em;
-        margin-bottom: 0.55em;
+        margin-bottom: 0.33em;
         padding: 0;
       }
         .page__title::after {
           content: '.';
          }
+
+
+.page__body h1 {
+  text-align: center;
+  margin: 0.5em 0;
+
+}
 .nav__menu {
   list-style: none;
   text-align: right;
@@ -64,4 +67,42 @@ body {
     display: flex;
     align-items: center;
     justify-items: center;
+  }
+
+
+/* -------------------------- Formatting */
+blockquote {
+  border: 0.1em dashed;
+  margin: 1em 0;
+  padding: 2em;
+  position: relative;
+}
+  blockquote cite {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+  }
+  blockquote cite::before {
+    content: '';
+  }
+code {
+  display: block;
+}
+.page__body ul,
+.page__body ol {
+  margin: 1em 0;
+}
+.page__body li {
+  margin: 0.5em 0;
+  line-height: 1.3em;
+}
+.page__body p {
+  line-height: 1.3em;
+  margin: 0.5em 0;
+}
+pre {
+    border-radius: 10% 0;
+    overflow-x: auto;
+    padding: 1rem;
+    white-space: pre-wrap;
   }
