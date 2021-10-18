@@ -1,8 +1,7 @@
-@import url("_base.css");
 /* --------------------------------------------------- HEADINGS */
 .page__title {
   font-family: var(--font__custom__heading);
-  font-size: calc(10em + 2vw);
+  font-size: calc(6rem + 2vw);
   font-weight: bold;
   letter-spacing: -0.066em;
   line-height: 1.1;
@@ -11,30 +10,30 @@
 .page__headline,
 .page__body h1 {
   font-family: var(--font__custom__headline), var(--font__serif);
-  font-size: calc(2.5em + 2vw);
+  font-size: calc(2rem + 2vw);
   letter-spacing: -0.05em;
   line-height: 1.1;
 }
 .page__body h2 {
   font-family: var(--font__custom__headline);
-  font-size: calc((2.5em + 2vw)*0.66);
+  font-size: calc(1rem + 2vw);
   font-weight: normal;
 }
 .page__body h3 {
-  font-size: 1em;
-  font-weight: bold;
+  font-family: var(--font__custom__body);
+  font-size: calc(1rem + 1vw);
+  font-weight: normal;
 }
 /* --------------------------------------------------- NAVIGATIONS */
 .nav__breadcrumb {
   font-family: var(--font__custom__mono), var(--font__mono);
-  font-size: 1em;
+  font-size: calc(1rem * 0.66);
   text-transform: capitalize;
   font-weight: bold;
 }
 .nav__menu {
   font-family: var(--font__custom__mono), var(--font__mono);
   font-weight: bold;
-  font-size: 2em;
 }
 /* --------------------------------------------------- Formatting */
 abbr,
@@ -72,7 +71,7 @@ time {
 /* --------------------------------------------------- ARTICLE -- Meta Data */
 .article__date_value {
   font-family: var(--font__custom__headline), var(--font__serif);
-  font-size: calc(2.5em + 2vw);
+  font-size: calc(1.66rem + 2vw);
   letter-spacing: -0.05em;
   line-height: 1.1;
   text-decoration-line: underline;
@@ -84,6 +83,6 @@ time {
 /* --------------------------------------------------- TEXT */
 .page__body {
   font-family: var(--font__custom__body);
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.1;
 }
