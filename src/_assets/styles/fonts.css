@@ -1,4 +1,4 @@
-/* -------------------------------- ALEGREYA
+/* -------------------------------- ALEGREYA */
 @font-face {
   font-family: 'Alegreya';
   src: url('../fonts/Alegreya/Alegreya-Regular.ttf') format('truetype');
@@ -22,61 +22,149 @@
   src: url('../fonts/Alegreya/Alegreya-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
-}
-
-/* -------------------------------- CRIMSON
-font-face {
-  font-family: 'crimson';
-  src: url('../fonts/Crimson/crimson-bold-webfont.eot');
-  src: url('../fonts/Crimson/crimson-bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Crimson/crimson-bold-webfont.woff') format('woff'),
-       url('../fonts/Crimson/crimson-bold-webfont.ttf') format('truetype');
-  font-weight: bold;
+}/* -------------------------------- Public Sans */
+@font-face {
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-Black.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-Black.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-Black.ttf') format('truetype');
+  font-weight: 900;
   font-style: normal;
 }
 @font-face {
-  font-family: 'crimson';
-  src: url('../fonts/Crimson/crimson-bolditalic-webfont.eot');
-  src: url('../fonts/Crimson/crimson-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Crimson/crimson-bolditalic-webfont.woff') format('woff'),
-       url('../fonts/Crimson/crimson-bolditalic-webfont.ttf') format('truetype');
-  font-weight: bold;
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-BlackItalic.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-BlackItalic.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
   font-style: italic;
 }
 @font-face {
-  font-family: 'crimson';
-  src: url('../fonts/Crimson/crimson-italic-webfont.eot');
-  src: url('../fonts/Crimson/crimson-italic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Crimson/crimson-italic-webfont.woff') format('woff'),
-       url('../fonts/Crimson/crimson-italic-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'crimson';
-  src: url('../fonts/Crimson/crimson-roman-webfont.eot');
-  src: url('../fonts/Crimson/crimson-roman-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Crimson/crimson-roman-webfont.woff') format('woff'),
-       url('../fonts/Crimson/crimson-roman-webfont.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-ExtraBold.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-ExtraBold.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
   font-style: normal;
 }
 @font-face {
-  font-family: 'crimson';
-  src: url('../fonts/Crimson/crimson-semibold-webfont.eot');
-  src: url('../fonts/Crimson/crimson-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Crimson/crimson-semibold-webfont.woff') format('woff'),
-       url('../fonts/Crimson/crimson-semibold-webfont.ttf') format('truetype');
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-ExtraBoldItalic.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-ExtraBoldItalic.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-Bold.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-Bold.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-BoldItalic.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-BoldItalic.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-SemiBold.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-SemiBold.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: 'crimson';
-  src: url('../fonts/Crimson/crimson-semibolditalic-webfont.eot');
-  src: url('../fonts/Crimson/crimson-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Crimson/crimson-semibolditalic-webfont.woff') format('woff'),
-       url('../fonts/Crimson/crimson-semibolditalic-webfont.ttf') format('truetype');
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-SemiBoldItalic.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-SemiBoldItalic.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-Medium.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-Medium.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-MediumItalic.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-MediumItalic.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-Regular.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-Regular.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-RegularItalic.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-RegularItalic.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-RegularItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-Thin.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-Thin.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-Thin.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-ThinItalic.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-ThinItalic.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-ThinItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-Light.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-Light.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-LightItalic.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-LightItalic.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-LightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-ExtraLight.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-ExtraLight.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-ExtraLight.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Public Sans';
+  src:    url('../fonts/PublicSans/woff/PublicSans-ExtraLightItalic.woff') format('woff'),
+          url('../fonts/PublicSans/woff2/PublicSans-ExtraLightItalic.woff2') format('woff2'),
+          url('../fonts/PublicSans/ttf/PublicSans-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 100;
   font-style: italic;
 }
 /* -------------------------------- FANTASQUE SANS MONO https://awesomeopensource.com/project/belluzj/fantasque-sans */
