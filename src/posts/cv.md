@@ -45,9 +45,3 @@ date: 2021-10-16
 I primarily write plain CSS and HTML. I started at a young age and it's a hobby I keep returning to. Now, I am developing my personal website built on 11ty.
 
 I often read content design related articles. The "front of the front-end" intrigues me; the intersection between development, content design and usability. I have a weakness for eye-pleasing typography.
-
----
-
-- I enjoy writing, but when I do, I don't feel that I'm particularly good at it.
-- I don't often take [photos](photography), but when I do, I quite enjoy it.
-
