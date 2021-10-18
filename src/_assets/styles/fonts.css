@@ -1,3 +1,30 @@
+/* -------------------------------- ALEGREYA
+@font-face {
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya/Alegreya-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya/Alegreya-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya/Alegreya-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya/Alegreya-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* -------------------------------- CRIMSON
 font-face {
   font-family: 'crimson';
   src: url('../fonts/Crimson/crimson-bold-webfont.eot');
