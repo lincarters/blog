@@ -31,20 +31,8 @@ body {
       display: flex;
       flex-flow: row wrap;
     }
-      .page__title {
-        margin-left: -0.05em;
-        margin-bottom: 0.33em;
-        padding: 0;
-      }
-        .page__title::after {
-          content: '.';
-         }
 
 
-.page__body h1 {
-  text-align: center;
-  margin: 0.5em 0;
-}
 .nav__menu {
   list-style: none;
   text-align: right;
@@ -106,7 +94,19 @@ pre {
   }
 
 
-  /* -------------------- Headings */
-  .page__body h3 {
+/* -------------------- Headings */
+.page__title {
+  margin-left: -0.05em;
+  margin-bottom: 0.33em;
+  padding: 0;
+}
+.page__title::after {
+  content: '.';
+}
+.page__body h1 {
+  text-align: center;
+  margin: 0.5em 0;
+}
+.page__body h3 {
   margin-top: 2em;
 }
