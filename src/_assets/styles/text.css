@@ -4,18 +4,17 @@
   font-size: 1rem;
   line-height: 1.1;
 }
-.page__body {
+.main p:first-child {
   font-family: var(--font__custom__body), var(--font__serif);
   font-size: calc(1.66rem + 1vw);
 }
-/* --------------------------------------------------- HEADINGS */
+/* --------------------------------------------------- Headings */
 .post__header {
   font-family: var(--font__custom__headline), var(--font__serif);
   font-size: calc(2rem + 1vw);
   letter-spacing: -0.05em;
   line-height: 1.1;
 }
-.page__headline,
 .post__body h1 {
   font-family: var(--font__custom__headline), var(--font__serif);
   font-size: calc(2.75rem + 1vw);
@@ -36,6 +35,11 @@
   letter-spacing: -0.066em;
   line-height: 1.1;
   text-decoration-line: underline;
+  display: block;
+}
+.page__headline {
+  font-family: var(--font__custom__body), var(--font__serif);
+  font-size: calc(1.66rem + 1vw);
 }
 /* --------------------------------------------------- NAVIGATIONS */
 .nav__breadcrumb {
@@ -53,8 +57,13 @@ abbr,
 mark,
 sup {
   font-variant: small-caps;
-  font-size: 1.15em;
-  letter-spacing: 0.15em;
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+}
+abbr[title] {
+  _border-bottom: 0.2em double;
+  text-decoration-style: double;
+  cursor: help;
 }
 code,
 pre,

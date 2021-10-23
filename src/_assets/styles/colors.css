@@ -41,7 +41,10 @@ a:hover {
 }
 
 
-/* --------------------------- Paragraphs */
+/* --------------------------- Text */
+abbr[title] {
+  text-decoration-color: var(--color__primary__lighter);
+}
 blockquote {
   background: var(--color__border);
   border-color: var(--color__link);
