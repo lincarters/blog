@@ -1,8 +1,8 @@
 ---
 layout: layouts/page
 eleventyNavigation:
-  key: Hello
+  key: Index
+  title: Linda's Corner
 title: Hello
-headline: This is Linda's personal website.
 ---
-Find out more [about me](about), read some of[my words]() or view some of [my photos]().
+Find out more [about me](about), [read some of my words]() or [view photos I took]().
