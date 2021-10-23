@@ -1,12 +1,12 @@
 ---
 eleventyNavigation:
   key: CV
-date: 2021-10-16
+  parent: About
+title: CV
 ---
-# Curriculum Vitae
+Efficient, enthusiastic and organised with experience in call handling, customer service and data entry.
+
 ## Work History
-
-
 ### *Personal Assistant*, Cymphony, Crewe (2021-present)
 * Assisting with queries regarding services and products.
 * Handling incoming telephone calls for a wide variety of businesses.
@@ -41,7 +41,6 @@ date: 2021-10-16
 | Functional Skills Mathematics Level 1 & 2 | *South Cheshire College*, Crewe | 2016 |
 
 ## Hobbies & Interests
-### I enjoy building websites.
-I primarily write plain CSS and HTML. I started at a young age and it's a hobby I keep returning to. Now, I am developing my personal website built on 11ty.
+**I enjoy building websites.** I primarily write plain CSS and HTML. I started at a young age and it's a hobby I keep returning to. Now, I am developing my personal website built on 11ty.
 
 I often read content design related articles. The "front of the front-end" intrigues me; the intersection between development, content design and usability. I have a weakness for eye-pleasing typography.
