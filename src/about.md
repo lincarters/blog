@@ -1,10 +1,13 @@
 ---
 layout: layouts/page
+tags: parent
 eleventyNavigation:
+  parent: Index
   key: About
 title: About
 ---
-- I enjoy writing, but when I do, I don't feel that I'm particularly good at it.
-- I don't often take [photos](photography), but when I do, I quite enjoy it.
+I'm not necessarily a *web developer* nor a *web designer*—I'm somewhere in between.
 
-I surround myself with positive thinking and try my best to be free from negative emotions. I try to see see things in a positive light. I think perspective is important and something that you can forge.
+Linda is an aspiring *content executive*. She values content that is clear, concise and correct.
+
+She enjoys building websites by writing plain <abbr title="Cascading Style Sheets">CSS</abbr> and <abbr title="HyperText Markup Language">HTML</abbr>.
