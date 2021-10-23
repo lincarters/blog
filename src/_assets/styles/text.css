@@ -1,4 +1,34 @@
+/* --------------------------------------------------- TEXT */
+.main {
+  font-family: var(--font__custom__body);
+  font-size: 1rem;
+  line-height: 1.1;
+}
+.page__body {
+  font-family: var(--font__custom__body), var(--font__serif);
+  font-size: calc(1.66rem + 1vw);
+}
 /* --------------------------------------------------- HEADINGS */
+.post__header {
+  font-family: var(--font__custom__headline), var(--font__serif);
+  font-size: calc(2rem + 1vw);
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+.page__headline,
+.post__body h1 {
+  font-family: var(--font__custom__headline), var(--font__serif);
+  font-size: calc(2.75rem + 1vw);
+}
+.post__body h2 {
+  font-family: var(--font__custom__body);
+  font-size: calc(1.66rem + 1vw);
+}
+.post__body h3 {
+  font-family: var(--font__custom__body), var(--font__serif);
+  font-size: calc(1rem + 1vw);
+  font-weight: normal;
+}
 .page__title {
   font-family: var(--font__custom__heading);
   font-size: calc(6rem + 2vw);
@@ -6,23 +36,6 @@
   letter-spacing: -0.066em;
   line-height: 1.1;
   text-decoration-line: underline;
-}
-.page__headline,
-.page__body h1 {
-  font-family: var(--font__custom__headline), var(--font__serif);
-  font-size: calc(2rem + 2vw);
-  letter-spacing: -0.05em;
-  line-height: 1.1;
-}
-.page__body h2 {
-  font-family: var(--font__custom__headline);
-  font-size: calc(1rem + 2vw);
-  font-weight: normal;
-}
-.page__body h3 {
-  font-family: var(--font__custom__body);
-  font-size: calc(1rem + 1vw);
-  font-weight: normal;
 }
 /* --------------------------------------------------- NAVIGATIONS */
 .nav__breadcrumb {
@@ -70,19 +83,9 @@ time {
 }
 /* --------------------------------------------------- ARTICLE -- Meta Data */
 .article__date_value {
-  font-family: var(--font__custom__headline), var(--font__serif);
-  font-size: calc(1.66rem + 2vw);
-  letter-spacing: -0.05em;
-  line-height: 1.1;
   text-decoration-line: underline;
 }
 .article__date_value time::after {
   content: ':';
 }
 
-/* --------------------------------------------------- TEXT */
-.page__body {
-  font-family: var(--font__custom__body);
-  font-size: 1rem;
-  line-height: 1.1;
-}

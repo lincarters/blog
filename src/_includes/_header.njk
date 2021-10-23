@@ -1,31 +1,22 @@
 <header class="header">
   <nav>
     <ul class="nav__breadcrumb">
-      <li>
-
-
-      {% if page.url == "/"%}
-      
-      {{ site.title }}
-      
+      <!--li>
+      {% if page.url == "/"%} 
+        {{ site.title }}
       {% else %}
-      
-      <a href="/">{{ site.title }}</a>
-      
+        <a href="/">{{ site.title }}</a>
       {% endif %}
-</li>
-
-
-
-      {% set navBreadcrumb = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: false }) %}
+</li-->
+      {% set navBreadcrumb = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: true }) %}
       {%- for item in navBreadcrumb %}
         <li>{% if item.url == page.url %}{{ item.title }}{% else %}<a href="{{ item.url | url }}">{{ item.title }}</a>{% endif %}</li>
       {%- endfor %}
     </ul>
   </nav>
-  <!--ul class="nav__menu">
-    {%- for page in collections.page -%}
+  <ul class="nav__menu">
+    {%- for page in collections.parent -%}
       <li class="nav__menu__item"><a href="{{ page.url | url }}">{{ page.data.title }}</a></li>
     {% endfor %}
-  </ul-->
+  </ul>
 </header>

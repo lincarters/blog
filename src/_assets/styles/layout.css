@@ -1,36 +1,34 @@
 body {
   display: grid;
-  grid-template-columns: 1fr minmax(10em,40em) 1fr 1fr;
+  grid-template-columns: 1fr minmax(10em,40em) 2fr;
   grid-template-rows: min-content auto 1fr min-content;
   grid-template-areas:
-    "header header header header" 
-    ". page page ."
-    ". . . ."
-    "footer footer footer footer"
+    "header header header" 
+    ". main ."
+    ". . ."
+    "footer footer footer"
   ;
   align-content: center;
   min-height: 100vh;
-  margin: 0 1rem;
 }
-  .header {
-    display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-    grid-area: header;
-    margin: 1rem;
+.header {
+  grid-area: header;
+  display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  margin: 1rem;
   }
-    .header__title {
-      display: flex;
-        flex-flow: row wrap;
-    }
-  .page {
-    grid-area: page;
-    margin: 0 1rem;
-  }
-    .page__header {
-      display: flex;
-      flex-flow: row wrap;
-    }
+.main {
+  grid-area: main;
+  margin: 0 2rem;
+}
+.footer {
+  grid-area: footer;
+  display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
 
 
 .nav__menu {
@@ -48,12 +46,7 @@ body {
 .nav__breadcrumb li::before {
   content: '\00a0>\00a0';
 }
-  .footer {
-    grid-area: footer;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-  }
+  
 
 
 /* -------------------------- Formatting */
@@ -74,15 +67,15 @@ blockquote {
 code {
   display: block;
 }
-.page__body ul,
-.page__body ol {
+.main ul,
+.main ol {
   margin: 1em 0;
 }
-.page__body li {
+.main li {
   margin: 0.5em 0;
   line-height: 1.3em;
 }
-.page__body p {
+.main p {
   line-height: 1.3em;
   margin: 0.5em 0;
 }
@@ -103,10 +96,10 @@ pre {
 .page__title::after {
   content: '.';
 }
-.page__body h1 {
+.post__body h1 {
   text-align: center;
-  margin: 0.5em 0;
+  margin: 0.66em 0 1.33em 0;
 }
-.page__body h3 {
-  margin-top: 2em;
+.post__body h3 {
+  margin-top: 1em;
 }
