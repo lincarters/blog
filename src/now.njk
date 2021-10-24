@@ -6,9 +6,13 @@ eleventyNavigation:
   key: Now
 title: Now
 ---
-<ul>
-{% set navPages = collections.now | eleventyNavigation(eleventyNavigation.key, { includeSelf: false }) %}
-  {%- for item in navPages %}
-    <li><a href="{{ item.url | url }}"><time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time></a></li>
+<p>Hey, you're on my <dfn title="a page that tells you what this person is focused on at this point in their life">Now page</dfn>. The last update was on <time>{{ data.date | dateReadable }}</time>.</p>
+
+<!--ol reversed class="nav__now">
+{% set navNow = collections.now | eleventyNavigation(eleventyNavigation.key, { includeSelf: false }) %}
+  {%- for item in navNow %}
+    <li><a href="{{ item.url | url }}">{{ item.title }}</a></li>
   {%- endfor %}
-</ul>
+</ol-->
+<hr>
+<p>Inspired by <a href="https://nownownow.com/about">Deker Sivers</a>.</p>

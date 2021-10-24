@@ -2,8 +2,9 @@
     "layout": "layouts/post",
     "tags": "now",
     "eleventyComputed": {
+      "title": "What I'm Doing Now",
       "eleventyNavigation": {
-        "key": "{{ date | dateReadable }}: What I'm doing now",
+        "key": "{{ title }}: {{ date | dateReadable }}",
         "parent": "Now"
       }
     }
