@@ -4,7 +4,7 @@
   font-size: 1rem;
   line-height: 1.1;
 }
-.main p:first-child {
+.main p:first-of-type {
   font-family: var(--font__custom__body), var(--font__serif);
   font-size: calc(1.66rem + 1vw);
 }
@@ -23,7 +23,8 @@
   font-family: var(--font__custom__body);
   font-size: calc(1.66rem + 1vw);
 }
-.post__body h3 {
+.post__body h3,
+.page__body h3 {
   font-family: var(--font__custom__body), var(--font__serif);
   font-size: calc(1rem + 1vw);
   font-weight: normal;
@@ -66,8 +67,7 @@ abbr[title] {
   cursor: help;
 }
 code,
-pre,
-time {
+pre {
   font-family: var(--font__custom-mono), var(--font-mono);
 }
 cite,
@@ -86,9 +86,6 @@ mark {
 }
 sup {
   font-weight: bold;
-}
-time {
-  font-size: 0.8em;
 }
 /* --------------------------------------------------- ARTICLE -- Meta Data */
 .article__date_value {
