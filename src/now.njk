@@ -1,0 +1,14 @@
+---
+layout: layouts/page
+tags: parent
+eleventyNavigation:
+  parent: Index
+  key: Now
+title: Now
+---
+<ul>
+{% set navPages = collections.now | eleventyNavigation(eleventyNavigation.key, { includeSelf: false }) %}
+  {%- for item in navPages %}
+    <li><a href="{{ item.url | url }}"><time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time></a></li>
+  {%- endfor %}
+</ul>
