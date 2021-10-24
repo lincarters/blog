@@ -23,7 +23,7 @@ hr {
 a {
   box-sizing: border-box;
   margin: 0;
-  text-decoration: solid underline 0.15em;
+  text-decoration: solid underline 0.125em;
 }
 a:focus {
   outline: 0.2em dashed;
