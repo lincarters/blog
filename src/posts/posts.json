@@ -1,4 +1,10 @@
 {
   "layout": "layouts/post",
-  "tags": "post"
+  "tags": "post",
+  "eleventyComputed": {
+    "eleventyNavigation": {
+      "key": "{{ title }}",
+      "parent": "Posts"
+    }
+  }
 }
