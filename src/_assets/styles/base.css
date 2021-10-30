@@ -25,7 +25,8 @@ p {
 }
 /* --------------------------- Layout */
 body {
-  background-color: var(--color__fg);
+  background-color: var(--color__bg);
+  color: var(--color__primary);
   display: grid;
   grid-template-columns: 1fr minmax(10em,40em) 2fr;
   grid-template-rows: min-content auto 1fr min-content;
@@ -58,22 +59,22 @@ body {
 /* --------------------------- Navigation */
 a {
   box-sizing: border-box;
-  color: var(--color__primary__darker);
-  fill: var(--color__primary__darker);
+  color: var(--color__primary);
+  fill: var(--color__primary);
   margin: 0;
-  text-decoration: solid underline 0.125em var(--color__primary__lighter);
+  text-decoration: solid underline 0.075em var(--color__secondary);
 }
 a:active {
-  color: var(--color__cta);
-  fill: var(--color__cta);
+  color: var(--color__primary);
+  fill: var(--color__primary);
 }
 a:focus {
   outline: 0.2em dashed var(--color__cta);
   outline-offset: 0.2em;
 }
 a:hover {
-  color: var(--color__cta);
-  fill:var(--color__cta);
+  color: var(--color__secondary);
+  fill:var(--color__secondary);
   text-decoration-color: inherit;
 }
 /* --------------------------- Navigation :: Breadcrumb */
@@ -115,7 +116,9 @@ a:hover {
   margin-top: 1em;
   text-align: center;
 }
-.page__title {
+.page__title,
+.post__title {
+  color: var(--color__primary);
   font-family: var(--font__custom__heading);
   font-size: calc(5rem + 1vw);
   font-weight: bold;
@@ -123,12 +126,12 @@ a:hover {
   line-height: 1.1;
   margin-left: -0.04em;
   padding: 0;
-  border-bottom: solid var(--color__primary);
+  border-bottom: solid var(--color__secondary);
   text-shadow: /* paints over border by applying 'glow', courtesy of https://a11y-101.com/development/underlined-links */
-    0.015em 0.015em var(--color__fg),
-    0.015em -0.015em var(--color__fg),
-    -0.015em 0.015em var(--color__fg),
-    -0.015em -0.015em var(--color__fg);
+    0.015em 0.015em var(--color__bg),
+    0.015em -0.015em var(--color__bg),
+    -0.015em 0.015em var(--color__bg),
+    -0.015em -0.015em var(--color__bg);
 }
 .page__headline {
   font-family: var(--font__custom__body), var(--font__serif);
@@ -163,17 +166,10 @@ dfn[title] {
   cursor: help;
 }
 code {
-  background: var(--color__fg);
+  background: var(--color__primary);
+  color: var(--color__bg);
   font-family: var(--font__custom__mono), var(--font__mono);
-}
-mark {
-  background-color: var(--color__bg);
-  box-sizing: border-box;
-  box-shadow: inset 0 0 -2em currentColor;
-  color: var(--color__border);
-  font-family: var(--font__custom__body), var(--font__serif);
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-size: 0.75em;
 }
 pre {
   overflow-x: auto;
@@ -192,17 +188,18 @@ sup {
 .main p {
   margin: 0.5em 0;
 }
-.main p:first-of-type {
+.page__body > p:first-of-type {
   font-size: calc(1.66rem + 1vw);
 }
 /* --------------------------- Formatting :: Quotes */
 blockquote {
-  background: var(--color__border);
-  border: 0.1em dashed var(--color__link);
+  color: var(--color__primary);
   margin: 1em 0;
   padding: 2em;
   position: relative;
 }
+blockquote::before { content: '\201C';}
+blockquote::after  { content: '\201D';}
   blockquote cite {
     font-size: 0.8em;
     position: absolute;
@@ -210,7 +207,7 @@ blockquote {
     right: 1em;
   }
   blockquote cite::before {
-    content: '';
+    content: '\2013';
   }
 cite,
 q {
@@ -249,8 +246,5 @@ hr {
 }
 
 .article__date_value {
-  text-decoration: underline var(--color__primary__lighter);
-}
-.article__date_value time::after {
-  content: ':';
+  text-decoration: underline var(--color__secondary);
 }
