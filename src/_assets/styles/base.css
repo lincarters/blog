@@ -121,10 +121,14 @@ a:hover {
   font-weight: bold;
   letter-spacing: -0.066em;
   line-height: 1.1;
-  margin-left: -0.05em;
-  margin-bottom: 0.33em;
+  margin-left: -0.04em;
   padding: 0;
   border-bottom: solid var(--color__primary);
+  text-shadow: /* paints over border by applying 'glow', courtesy of https://a11y-101.com/development/underlined-links */
+    0.015em 0.015em var(--color__fg),
+    0.015em -0.015em var(--color__fg),
+    -0.015em 0.015em var(--color__fg),
+    -0.015em -0.015em var(--color__fg);
 }
 .page__headline {
   font-family: var(--font__custom__body), var(--font__serif);
