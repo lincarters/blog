@@ -1,5 +1,5 @@
-@import url("colors.css");
-@import url("fonts.css");
+@import url("_colors.css");
+@import url("_fonts.css");
 :root {
   --font__custom__heading: 'Faune Display';
   --font__custom__headline: 'Faune';
@@ -25,6 +25,7 @@ p {
 }
 /* --------------------------- Layout */
 body {
+  background-color: var(--color__fg);
   display: grid;
   grid-template-columns: 1fr minmax(10em,40em) 2fr;
   grid-template-rows: min-content auto 1fr min-content;
@@ -114,7 +115,6 @@ a:hover {
   margin-top: 1em;
   text-align: center;
 }
-
 .page__title {
   font-family: var(--font__custom__heading);
   font-size: calc(5rem + 1vw);
@@ -124,10 +124,7 @@ a:hover {
   margin-left: -0.05em;
   margin-bottom: 0.33em;
   padding: 0;
-  text-decoration-line: underline;
-}
-.page__title::after {
-  content: '.';
+  border-bottom: solid var(--color__primary);
 }
 .page__headline {
   font-family: var(--font__custom__body), var(--font__serif);
