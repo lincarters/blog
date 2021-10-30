@@ -2,11 +2,11 @@
 {% block main %}
 <article>
   <header class="post__header">
-  <dl>
-    <dt class="hidden">Published on:</dt>
-      <dd class="article__date_value"><time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time></dd>
-  </dl>
-  <h1 class="post__title">{{ title }}</h1>
+    <h1 class="post__title">{{ title }}</h1>
+    <dl>
+      <dt class="hidden">Published on:</dt>
+        <dd class="article__date_value"><time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time></dd>
+    </dl>
   </header>
   <section class="post__body">
     {{ content | safe }}

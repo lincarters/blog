@@ -105,27 +105,39 @@ a:hover {
     content: '\00a0<\00a0';
   }
 /* --------------------------- Headings */
-.post__header,
-.post__title {
+.post__header {
   font-family: var(--font__custom__headline), var(--font__serif);
   font-size: calc(2rem + 1vw);
   letter-spacing: -0.05em;
   line-height: 1.1;
 }
+  .article__date_value {
+    margin-bottom: 1em;
+    text-align: center;
+  }
 .post__title {
-  margin-top: 1em;
-  text-align: center;
-}
-.page__title,
-.post__title {
+  border-bottom: solid var(--color__secondary);
   color: var(--color__primary);
   font-family: var(--font__custom__heading);
   font-size: calc(5rem + 1vw);
   font-weight: bold;
-  letter-spacing: -0.066em;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  text-align: center;
+  text-shadow: /* paints over border by applying 'glow', courtesy of https://a11y-101.com/development/underlined-links */
+    0.015em 0.015em var(--color__bg),
+    0.015em -0.015em var(--color__bg),
+    -0.015em 0.015em var(--color__bg),
+    -0.015em -0.015em var(--color__bg);
+}
+.page__title {
+  color: var(--color__primary);
+  font-family: var(--font__custom__heading);
+  font-size: calc(5rem + 1vw);
+  font-weight: bold;
+  letter-spacing: -0.05em;
   line-height: 1.1;
   margin-left: -0.04em;
-  padding: 0;
   border-bottom: solid var(--color__secondary);
   text-shadow: /* paints over border by applying 'glow', courtesy of https://a11y-101.com/development/underlined-links */
     0.015em 0.015em var(--color__bg),
@@ -146,13 +158,14 @@ a:hover {
 .post__body h2 {
   font-family: var(--font__custom__body);
   font-size: calc(1.66rem + 1vw);
+  margin-top: 1em;
 }
 .post__body h3,
 .page__body h3 {
   font-family: var(--font__custom__body), var(--font__serif);
   font-size: calc(1rem + 1vw);
   font-weight: normal;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 /* --------------------------- Formatting */
 abbr {
@@ -243,8 +256,4 @@ hr {
   height: 2px;
   margin: 1.5rem auto;
   width: 33%;
-}
-
-.article__date_value {
-  text-decoration: underline var(--color__secondary);
 }
