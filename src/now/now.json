@@ -2,7 +2,7 @@
     "layout": "layouts/post",
     "tags": "now",
     "eleventyComputed": {
-      "title": "What I'm Doing Now",
+      "title": "Now page",
       "eleventyNavigation": {
         "key": "{{ title }}: {{ date | dateReadable }}",
         "parent": "Now"
