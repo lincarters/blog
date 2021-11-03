@@ -8,11 +8,12 @@ title: Now
 ---
 <p>Hey, you're on my <dfn title="a page that tells you what this person is focused on at this point in their life">Now page</dfn>. The last update was on <time>{{ data.date | dateReadable }}</time>.</p>
 
-<!--ol reversed class="nav__now">
+<!--h2>The Archive</h2>
+<ol class="nav__now">
 {% set navNow = collections.now | eleventyNavigation(eleventyNavigation.key, { includeSelf: false }) %}
   {%- for item in navNow %}
     <li><a href="{{ item.url | url }}">{{ item.title }}</a></li>
   {%- endfor %}
 </ol-->
 <hr>
-<p>Inspired by <a href="https://nownownow.com/about">Deker Sivers</a>.</p>
+<p>Idea from <a href="https://nownownow.com/about">Deker Sivers' Nownownow</a>.</p>
