@@ -1,6 +1,6 @@
 ---
 layout: layouts/page
-tags: parent
+tags: None
 eleventyNavigation:
   parent: Index
   key: Posts
