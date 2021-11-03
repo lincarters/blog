@@ -62,7 +62,6 @@ a {
   color: var(--color__secondary);
   fill: var(--color__secondary);
   margin: 0;
-  padding: 0 0.1em;
   text-decoration: solid underline 0.075em var(--color__secondary);
 }
 a:active {
