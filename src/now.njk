@@ -2,18 +2,16 @@
 layout: layouts/page
 tags: parent
 eleventyNavigation:
-  parent: Index
   key: Now
 title: Now
 ---
 <p>Hey, you're on my <dfn title="a page that tells you what this person is focused on at this point in their life">Now page</dfn>. The last update was on <time>{{ data.date | dateReadable }}</time>.</p>
-
-<!--h2>The Archive</h2>
+<h2>The Archive</h2>
 <ol class="nav__now">
 {% set navNow = collections.now | eleventyNavigation(eleventyNavigation.key, { includeSelf: false }) %}
   {%- for item in navNow %}
     <li><a href="{{ item.url | url }}">{{ item.title }}</a></li>
   {%- endfor %}
-</ol-->
+</ol>
 <hr>
 <p>Idea from <a href="https://nownownow.com/about">Deker Sivers' Nownownow</a>.</p>
