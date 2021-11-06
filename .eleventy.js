@@ -10,6 +10,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('dateReadable', date => { /* from https://keepinguptodate.com/pages/2019/06/creating-blog-with-eleventy/ */
     return moment(date).utc().format('LL'); // E.g. May 31, 2019
   });
+  eleventyConfig.addFilter('dateYYYYMMDD', date => { 
+    return moment(date).utc().format('YYYY-MM-DD'); // E.g. 2000-02-12
+  });
   return {
     dir: {
       input: "src",
