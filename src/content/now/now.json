@@ -1,11 +1,10 @@
 {
     "layout": "layouts/post",
     "tags": "now",
-    "permalink": "/now/{{ date | dateYYYYMMDD }}{{ title | slugify }}/",
+    "permalink": "/now/{{ title | slug }}/",
     "eleventyComputed": {
-      "title": "Now",
       "eleventyNavigation": {
-        "key": "{{ date | dateReadable }}",
+        "key": "{{ date | dateReadable }} {{ title }}",
         "parent": "Now"
       }
     }
