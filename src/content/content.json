@@ -1,0 +1,8 @@
+{
+  "eleventyComputed": {
+    "eleventyNavigation": {
+      "key": "{{ title }}",
+      "parent": "Index"
+    }
+  }
+}
