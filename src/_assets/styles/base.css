@@ -32,33 +32,34 @@ body {
   grid-template-rows: min-content auto 1fr min-content;
   grid-template-areas:
     "header header header" 
-    ". main ."
     ". . ."
-    ". footer ."
+    ". main ."
+    "footer footer footer"
   ;
   align-content: center;
   min-height: 100vh;
-  padding: 1rem;
 }
 .header {
   grid-area: header;
   display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-  margin-bottom: 2rem;
   padding: 1rem;
+  margin-bottom: 2rem;
   }
 .main {
   grid-area: main;
+  border-bottom: solid var(--color__secondary);
 }
 .footer {
-  border-top: solid var(--color__secondary);
   font-family: var(--font__custom__mono), var(--font__mono);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: bold;
   grid-area: footer;
   display: flex;
     flex-flow: column no-wrap;
     justify-content: space-between;
+  margin: 1rem;
   padding-top: 1rem;
 }
 /* --------------------------- Navigation */
@@ -138,6 +139,7 @@ a:hover {
     -0.015em -0.015em var(--color__bg);
 }
 .page__title {
+  border-bottom: solid var(--color__secondary);
   color: var(--color__primary);
   font-family: var(--font__custom__heading);
   font-size: calc(2rem + 4vw);
@@ -145,7 +147,6 @@ a:hover {
   letter-spacing: -0.05em;
   line-height: 1.1;
   margin-left: -0.04em;
-  border-bottom: solid var(--color__secondary);
   text-shadow: /* paints over border by applying 'glow', courtesy of https://a11y-101.com/development/underlined-links */
     0.015em 0.015em var(--color__bg),
     0.015em -0.015em var(--color__bg),
