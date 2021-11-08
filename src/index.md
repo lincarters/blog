@@ -4,8 +4,6 @@ eleventyComputed:
   eleventyNavigation:
     key: Index
     title: "{{ site.title }}"
-title: Hello
+title: Introduction
 ---
-I'm Linda. I like creating websites in plain <abbr title="Cascading Style Sheets">CSS</abbr> and <abbr title="HyperText Markup Language">HTML</abbr>. Not necessarily a *web developer* nor a *web designer*&mdash;I'm somewhere in between. I like simple, understated designs that are focused on content, typography and white space.
-
-[Here's what I'm doing now](/now/).
+Hi. I'm Linda, and I'm a tinkerer. This is a place for things that interest or inspire me. I also happen to enjoy building websites in plain <abbr title="Cascading Style Sheets">CSS</abbr> and <abbr title="HyperText Markup Language">HTML</abbr>.
