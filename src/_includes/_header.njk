@@ -7,9 +7,4 @@
       {%- endfor %}
     </ul>
   </nav>
-  <ul class="nav__menu">
-    {%- for page in collections.parent -%}
-      <li class="nav__menu__item"><a href="{{ page.url | url }}">{{ page.data.title }}</a></li>
-    {% endfor %}
-  </ul>
 </header>
