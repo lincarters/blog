@@ -146,6 +146,7 @@ a:hover {
   letter-spacing: -0.05em;
   line-height: 1.1;
   margin-left: -0.04em;
+  text-align: center;
   text-shadow: /* paints over border by applying 'glow', courtesy of https://a11y-101.com/development/underlined-links */
     0.015em 0.015em var(--color__bg),
     0.015em -0.015em var(--color__bg),
