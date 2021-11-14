@@ -6,6 +6,4 @@ eleventyComputed:
     title: "{{ site.title }}"
 title: Introduction
 ---
-Hi. I'm Linda, and I'm a tinkerer. This is a place for things that interest or inspire me. I also happen to enjoy building websites in plain <abbr title="Cascading Style Sheets">CSS</abbr> and <abbr title="HyperText Markup Language">HTML</abbr>.
-
-[Here's what I'm doing now](/now/).
+Hi. I'm Linda. This is a place for things that interest or inspire me. I also happen to enjoy building websites in plain <abbr title="Cascading Style Sheets">CSS</abbr> and <abbr title="HyperText Markup Language">HTML</abbr>.
