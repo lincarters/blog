@@ -23,6 +23,13 @@
   font-weight: 700;
   font-style: italic;
 }
+/* -------------------------------- Yanone Kaffeesatz */
+@font-face {
+  font-family: 'YanoneKaffeesatz';
+  src: url('fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-VariableFont_wght.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 300 800;
+}
 /* -------------------------------- FANTASQUE SANS MONO https://awesomeopensource.com/project/belluzj/fantasque-sans */
 @font-face {
   font-family: 'Fantasque Sans Mono';
@@ -95,7 +102,6 @@
   font-style: normal;
 }
 /* -------------------------------- FAUNE */
-
 @font-face {
   font-family: 'Faune';
   src:    url('../fonts/Faune/eot/Faune-Text_Bold.eot');
