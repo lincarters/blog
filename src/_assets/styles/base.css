@@ -52,7 +52,7 @@ body {
   border-bottom: solid var(--color__secondary);
 }
 .footer {
-  font-family: var(--font__custom__mono), var(--font__mono);
+  font-family: var(--font__custom__body);
   font-size: 0.8rem;
   font-weight: bold;
   grid-area: footer;
@@ -207,7 +207,11 @@ sup {
   line-height: 1.4;
 }
 .main p {
-  margin: 0.5em 0;
+  margin: 0.5em auto;
+  width: 60%;
+}
+.page__body > p:first-of-type {
+  width: 100%;
 }
 .page__body > p:first-of-type {
   font-size: calc(1.66rem + 1vw);
