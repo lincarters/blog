@@ -1,9 +1,9 @@
 <header class="header">
   <nav>
-    <ul class="nav__breadcrumb">
-      {% set navBreadcrumb = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: true }) %}
+    <div class="nav__breadcrumb">
+      {% set navBreadcrumb = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: false }) %}
       {%- for item in navBreadcrumb %}
-        <li>{% if item.url == page.url %}{{ item.title }}{% else %}<a href="{{ item.url | url }}">{{ item.title }}</a>{% endif %}</li>
+        <p>{% if item.url == page.url %}{{ item.title }}{% else %}<a href="{{ item.url | url }}">{{ item.title }}</a>{% endif %}</p>
       {%- endfor %}
     </ul>
   </nav>

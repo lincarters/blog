@@ -26,7 +26,15 @@
 /* -------------------------------- Yanone Kaffeesatz */
 @font-face {
   font-family: 'YanoneKaffeesatz';
-  src: url('fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-VariableFont_wght.ttf') format('ttf');
+  src: url('../fonts/Yanone_Kaffeesatz/YanoneKaffeesatz-VariableFont_wght.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 300 800;
+}
+/* -------------------------------- Manrope */
+@font-face {
+  font-family: 'Manrope';
+  src:  url('../fonts/Manrope/Manrope_wght.woff2') format('woff2'),
+        url('../fonts/Manrope/Manrope_wght.ttf') format('ttf');
   font-style: normal;
   font-weight: 300 800;
 }
